@@ -1,0 +1,25 @@
+Versión terminada 1.4: BROADCAST PACKET
+
+Subsecuencias de versiones:
+* version 1.0: BASIC DOCUMENT PRINTING
+Las workstations piden a la red token ring entregar un documento a un nodo que representa una impresora.
+* version 1.1: LOG PACKET SENDING
+Cada vez que un nodo envía un paquete al siguiente debe registrarse en un fichero de log.
+* version 1.2: POSTSCRIPT PRINTING
+Un paquete puede empezar con "!PS", en tal caso las impresoras deberian reconocerlo como postcript e invocar a un trabajo de impresión en postcript.
+* version 1.3: PRINT ACCOUNTING
+Las impresoras deberían registrar el autor y el título del documento que  esta siendo impreso.
+Para un documento ASCII el autor esta en los caracteres del 10 al 30 y el título es  "ASCII DOCUMENT".
+Para documentos postcript, el autor y el título del documento debería ser encontrados escaneando los caracteres en el documento, buscando las palabras clave "author:" hasta"."
+* VERSION 1.4: BROADCAST PACKET
+Introduce un nuevo tipo de paquete "BROADCAST" que debería ser aceptado por todos los nodos en la red. 
+* version 2.0: READ FROM FILE
+Lee la configuración de la red y los trabajos que deben ser impresos desde un fichero en formato XML.
+* version 2.1: GATEWAY NODE
+Introduce un nuevo nodo "gateway", el cuál pueda reconocer todas las direcciones en su subred actual mirando los 3 caracteres de la dirección.
+Si un paquete pasa a través del gateway y la dirección no esta en la subred actual, el mensaje es reenviado a través del gateway.  
+* version 2.1: COMPILE LIST OF NODES
+Usando el BROADCAST PACKET, el gateway envia periodicamente una petición a todos los nodos para que contesten con su nombre. Cada gateway puede verificar si los nodos tienen el prefijo correcto.
+* version 3.0: GUI
+El sistema debería tener una GUI que debería mostrar una animación del sistema ejecutándose.
+ 
