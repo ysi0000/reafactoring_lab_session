@@ -12,16 +12,16 @@ El contenido del directorio es:
   El fichero actual
   
 * ./doc_lab/SRe2LICRefacLabo.pdf
-  Especificaci�n detallada del enunciado. Lista de tareas  de la pr�ctica.
+  Especificación detallada del enunciado. Lista de tareas  de la práctica.
   
 * ./doc_lab/LANSimulationDocu.pdf
-  Diagramas  UML documentando la simulaci�n LAN
+  Diagramas  UML documentando la simulación LAN
 
 * ./doc
   Documentación del API  generada con javadoc 
   
 * toDoList
-  La lista de los casos de uso que han sido implementados y los que est�n todav�a sin hacer.
+  La lista de los casos de uso que han sido implementados y los que están todavía sin hacer.
 * src
   El directorio que contiene la versión de código Java (organizado en subdirectorios para los diferentes paquetes).
   Los ficheros de comandos compileLAN, generateJavaDoc, runLAN compila, ejecuta o genera la documentanción de la simulación.
