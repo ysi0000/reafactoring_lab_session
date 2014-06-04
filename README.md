@@ -17,7 +17,7 @@ El contenido del directorio es:
 * ./doc_lab/LANSimulationDocu.pdf
   Diagramas  UML documentando la simulaci�n LAN
 
-*./doc
+* ./doc
   Documentación del API  generada con javadoc 
   
 * toDoList
