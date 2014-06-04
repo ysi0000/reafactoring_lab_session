@@ -22,8 +22,7 @@ El contenido del directorio es:
   
 * toDoList
   La lista de los casos de uso que han sido implementados y los que est�n todav�a sin hacer.
-* 
-src
-  El directorio que contiene la versi�n de c�digo Java (organizado en subdirectorios para los diferentes paquetes).
-  Los ficheros de comandos compileLAN, generateJavaDoc, runLAN compila, ejecuta o genera la documentanci�n de la simulaci�n.
+* src
+  El directorio que contiene la versión de código Java (organizado en subdirectorios para los diferentes paquetes).
+  Los ficheros de comandos compileLAN, generateJavaDoc, runLAN compila, ejecuta o genera la documentanción de la simulación.
   Puedes definir estas tareas en tu entorno de desarrollo. 
