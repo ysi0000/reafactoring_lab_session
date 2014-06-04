@@ -3,8 +3,8 @@ reafactoring_lab_session
 
 Refactoring lab session. Object-Oriented Reengineering Patterns. Serge Demeyer - Bart Du Bois.
 
-Este directorio contiene los artefactos para una sesi�n pr�ctica de "Refactoring".
-La sesi�n aborda la refactorizaci�n de un sistema que simula una red de �rea local (LAN).
+Este directorio contiene los artefactos para una sesión práctica de "Refactoring".
+La sesión aborda la refactorización de un sistema que simula una red de área local (LAN).
 
 El contenido del directorio es:
 
