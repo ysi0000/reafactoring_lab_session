@@ -3,24 +3,27 @@ reafactoring_lab_session
 
 Refactoring lab session. Object-Oriented Reengineering Patterns. Serge Demeyer - Bart Du Bois.
 
-Este directorio contiene los artefactos para una sesión práctica de "Refactoring".
-La sesión aborda la refactorización de un sistema que simula una red de área local (LAN).
+Este directorio contiene los artefactos para una sesiï¿½n prï¿½ctica de "Refactoring".
+La sesiï¿½n aborda la refactorizaciï¿½n de un sistema que simula una red de ï¿½rea local (LAN).
 
 El contenido del directorio es:
 
 * readme_es.md
   El fichero actual
   
-* ./doc/SRe2LICRefacLabo.pdf
-  Especificación detallada del enunciado. Lista de tareas  de la práctica.
+* ./doc_lab/SRe2LICRefacLabo.pdf
+  Especificaciï¿½n detallada del enunciado. Lista de tareas  de la prï¿½ctica.
   
-* ./doc/LANSimulationDocu.pdf
-  Diagramas  UML documentando la simulación LAN
+* ./doc_lab/LANSimulationDocu.pdf
+  Diagramas  UML documentando la simulaciï¿½n LAN
+
+*./doc
+  DocumentaciÃ³n del API  generada con javadoc 
   
 * toDoList
-  La lista de los casos de uso que han sido implementados y los que están todavía sin hacer.
+  La lista de los casos de uso que han sido implementados y los que estï¿½n todavï¿½a sin hacer.
 * 
 src
-  El directorio que contiene la versión de código Java (organizado en subdirectorios para los diferentes paquetes).
-  Los ficheros de comandos compileLAN, generateJavaDoc, runLAN compila, ejecuta o genera la documentanción de la simulación.
+  El directorio que contiene la versiï¿½n de cï¿½digo Java (organizado en subdirectorios para los diferentes paquetes).
+  Los ficheros de comandos compileLAN, generateJavaDoc, runLAN compila, ejecuta o genera la documentanciï¿½n de la simulaciï¿½n.
   Puedes definir estas tareas en tu entorno de desarrollo. 
