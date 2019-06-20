@@ -19,6 +19,7 @@
  */
 package lanSimulation;
 
+import lanSimulation.internals.Network;
 import lanSimulation.tests.*;
 import java.lang.AssertionError;
 import java.io.*;
