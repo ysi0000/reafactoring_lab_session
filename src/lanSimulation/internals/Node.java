@@ -201,4 +201,40 @@ Construct a <em>Node</em> with given #type and #name, and which is linked to #ne
 		buf.append("\n</network>");
 	}
 
+	/**
+	Write a printable representation of #receiver on the given #buf.
+	<p><strong>Precondition:</strong> isInitialized();</p>
+	 * @param network TODO
+	 * @param buf TODO
+	 */
+	public void printOn (Network network, StringBuffer buf) {
+		assert network.isInitialized();
+		Node currentNode = this;
+		do {
+			switch (currentNode.type_) {
+			case Node.NODE:
+				buf.append("Node ");
+				buf.append(currentNode.name_);
+				buf.append(" [Node]");
+				break;
+			case Node.WORKSTATION:
+				buf.append("Workstation ");
+				buf.append(currentNode.name_);
+				buf.append(" [Workstation]");
+				break;
+			case Node.PRINTER:
+				buf.append("Printer ");
+				buf.append(currentNode.name_);
+				buf.append(" [Printer]");
+				break;
+			default:
+				buf.append("(Unexpected)");;
+				break;
+			};
+			buf.append(" -> ");
+			currentNode = currentNode.nextNode_;
+		} while (currentNode != this);
+		buf.append(" ... ");
+	}
+
 }
