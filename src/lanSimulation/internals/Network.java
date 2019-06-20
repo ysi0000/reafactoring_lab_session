@@ -171,6 +171,17 @@ which should be treated by all nodes.
 
 		Node currentNode = firstNode_;
 		Packet packet = new Packet("BROADCAST", firstNode_.name_, firstNode_.name_);
+		currentNode = send(report, currentNode, packet);
+
+		try {
+			report.write(">>> Broadcast travelled whole token ring.\n\n");
+		} catch (IOException exc) {
+			// just ignore
+		};
+		return true;
+	}
+
+	private Node send(Writer report, Node currentNode, Packet packet) {
 		do {
 			try {
 				report.write("\tNode '");
@@ -183,13 +194,7 @@ which should be treated by all nodes.
 			};
 			currentNode = currentNode.nextNode_;
 		} while (atDestination(currentNode, packet));
-
-		try {
-			report.write(">>> Broadcast travelled whole token ring.\n\n");
-		} catch (IOException exc) {
-			// just ignore
-		};
-		return true;
+		return currentNode;
 	}
 
 	private boolean atDestination(Node currentNode, Packet packet) {
