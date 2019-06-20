@@ -39,7 +39,7 @@ public class LANSimulation {
 		System.out.println(network);
 		System.out.println();
 
-		network.printHTMLOn(buf);
+		network.firstNode_.printHTMLOn(network, buf);
 		System.out.println("---------------------------------HTML------------------------------------------");
 		System.out.println(buf.toString());
 		System.out.println();
