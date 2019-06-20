@@ -313,40 +313,4 @@ Write a printable representation of #receiver on the given #buf.
 		buf.append(" ... ");
 	}
 
-	/**
-Write an XML representation of #receiver on the given #buf.
-<p><strong>Precondition:</strong> isInitialized();</p>
-	 */
-	public void printXMLOn (StringBuffer buf) {
-		assert isInitialized();
-
-		Node currentNode = firstNode_;
-		buf.append("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<network>");
-		do {
-			buf.append("\n\t");
-			switch (currentNode.type_) {
-			case Node.NODE:
-				buf.append("<node>");
-				buf.append(currentNode.name_);
-				buf.append("</node>");
-				break;
-			case Node.WORKSTATION:
-				buf.append("<workstation>");
-				buf.append(currentNode.name_);
-				buf.append("</workstation>");
-				break;
-			case Node.PRINTER:
-				buf.append("<printer>");
-				buf.append(currentNode.name_);
-				buf.append("</printer>");
-				break;
-			default:
-				buf.append("<unknown></unknown>");;
-				break;
-			};
-			currentNode = currentNode.nextNode_;
-		} while (currentNode != firstNode_);
-		buf.append("\n</network>");
-	}
-
 }

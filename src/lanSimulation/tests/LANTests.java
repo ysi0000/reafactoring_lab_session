@@ -216,7 +216,7 @@ the tests should work as expected.
 	    buf.append("\n\n---------------------------------HTML------------------------------------------\n");
 	    network.firstNode_.printHTMLOn(network, buf);
 	    buf.append("\n\n---------------------------------XML------------------------------------------\n");
-	    network.printXMLOn(buf);
+	    network.firstNode_.printXMLOn(network, buf);
 	    generateOutput.write(buf.toString());
 	    report.write("\n\n---------------------------------SCENARIO: Print Success --------------------------\n");
 	    network.requestWorkstationPrintsDocument("Filip", "Hello World", "Andy", report);

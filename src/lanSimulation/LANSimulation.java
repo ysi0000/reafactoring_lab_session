@@ -45,7 +45,7 @@ public class LANSimulation {
 		System.out.println();
 
 		buf.setLength(0);
-		network.printXMLOn(buf);
+		network.firstNode_.printXMLOn(network, buf);
 		System.out.println("---------------------------------XML------------------------------------------");
 		System.out.println(buf.toString());
 		System.out.println();
