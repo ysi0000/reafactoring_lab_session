@@ -2,14 +2,14 @@ package lanSimulation.internals;
 
 public class WorkStation extends Node{
 
-	public WorkStation(byte type, String name, Node nextNode) {
-		super(type, name, nextNode);
+	public WorkStation(String name, Node nextNode) {
+		super(name, nextNode);
 		// TODO Auto-generated constructor stub
 	}
 
-	public WorkStation(byte workstation, String string) {
+	public WorkStation( String string) {
 		// TODO Auto-generated constructor stub
-		super(workstation,string);
+		super(string);
 	}
 	protected void printNodeXML(StringBuffer buf) {
 		buf.append("<workstation>");
