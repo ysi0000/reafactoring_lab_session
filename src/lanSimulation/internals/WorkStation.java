@@ -11,6 +11,15 @@ public class WorkStation extends Node{
 		// TODO Auto-generated constructor stub
 		super(workstation,string);
 	}
+	protected void printNodeXML(StringBuffer buf) {
+		buf.append("<workstation>");
+		buf.append(this.name_);
+		buf.append("</workstation>");
+	}
 
-
+	protected void printNode(StringBuffer buf) {
+		buf.append("Workstation ");
+		buf.append(this.name_);
+		buf.append(" [Workstation]");
+	}
 }
